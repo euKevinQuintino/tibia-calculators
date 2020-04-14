@@ -1,7 +1,6 @@
 # Tibia calculators
 [![GitHub license](https://img.shields.io/github/license/kevinnicolasbq/tibia-calculators)](https://github.com/kevinnicolasbq/tibia-calculators/blob/master/LICENSE)
 [![author](https://img.shields.io/badge/author-kevinnicolasbq-2f4f4f)](https://github.com/kevinnicolasbq)
-[![GitHub issues](https://img.shields.io/github/issues/kevinnicolasbq/tibia-calculators)](https://github.com/kevinnicolasbq/tibia-calculators/issues)
 
 ## What do these calculators calculate?
 
