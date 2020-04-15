@@ -9,6 +9,8 @@
 * Character speed;
 * Character stats at certain level (based on character vocation).
 
+[**Click here to test**](https://kevinnicolasbq.github.io/tibia-calculators/)
+
 **IMPORTANT**:
 Some of theses formulas might not be official!
 
