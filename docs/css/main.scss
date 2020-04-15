@@ -1,0 +1,184 @@
+$textColor: #5a2800;
+
+@font-face {
+  font-family: "Martel";
+  src: url("../fonts/martel.ttf") format("ttf");
+}
+::-moz-selection { /* Code for Firefox */
+  color: $textColor;
+  background: #ffd700;
+}
+::selection {
+  color: $textColor;
+  background: #ffd700;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  color: $textColor;
+  background-image: url("../img/Background_Artwork_10.80.jpg");
+  background-size: cover;
+  overflow: hidden;
+}
+hr {
+  width: 840px;
+  border: 0.1px solid $textColor;
+  opacity: 0.3;
+}
+img { 
+  -webkit-user-drag: none; 
+  -khtml-user-drag: none; 
+  -moz-user-drag: none; 
+  -o-user-drag: none; 
+}
+#introduction {
+  display: block;
+}
+#experience-calculator {
+  display: none;
+}
+#party-calculator {
+  display: none;
+}
+#speed-calculator {
+  display: none;
+}
+#stats-calculator {
+  display: none;
+}
+.logo {
+  width: 586px;
+  height: 42px;
+  margin: 8px auto;
+}
+.main {
+  width: 960px;
+  height: 540px;
+  margin: auto;
+  background-image: url("../img/background.png");
+  background-repeat: no-repeat;
+  &__title {
+    padding-top: 28px;
+    margin-bottom: 8px;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 400;
+    font-family: "Martel";
+  }
+  &__calculators {
+    padding-left: 96px;
+    padding-right: 96px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+    &__button {
+      width: 150px;
+      height: 37px;
+      margin: 16px;
+      margin-bottom: 32px;
+      font-family: "Tahoma", sans-serif;
+      font-size: 18px;
+      color: #ffd700;
+      text-shadow: -1px -1px 0 #220, 1px -1px 0 #220, -1px 1px 0 #220, 1px 1px 0 #220;
+      background-image: url("../img/large-button.gif");
+      background-repeat: no-repeat;
+      border: none;
+    }
+  }
+  &__calculator {
+    width: 720px;
+    margin: 0 auto;
+    &__input {
+      margin-left: 200px;
+      width: 180px;
+      height: 18px;
+      font-size: 14px;
+    }
+    &__submit-button {
+      width: 135px;
+      height: 25px;
+      border: none;
+      font-family: "Verdana", sans-serif;
+      font-size: 14px;
+      color: #ffdf00;
+      text-shadow: -1px -1px 0 #220, 1px -1px 0 #220, -1px 1px 0 #220, 1px 1px 0 #220;
+      background-image: url("../img/normal-button.png");
+    }
+    &__result {
+      text-align: center;
+      font-size: 18px;
+      margin-top: 24px;
+      margin-bottom: 32px;
+    }
+    &__title {
+      font-weight: 400;
+      padding: 4px;
+      font-size: 32px;
+      text-align: center;
+      font-family: "Martel", serif;
+    }
+    &__description {
+      text-align: center;
+      margin-top: -4px;
+      line-height: 1.25em;
+      margin-bottom: 24px;
+      font-size: 18px;
+      &__link {
+        text-decoration: none;
+        font-weight: bold;
+        color: $textColor;
+      }
+    }
+  }
+  &__links {
+    width: 960px;
+    height: 30px;
+    display: flex;
+    margin-top: 36px;
+    align-content: center;
+    justify-content: center;
+    &__github {
+      width: 135px;
+      height: 25px;
+      text-shadow: -1px -1px 0 #220, 1px -1px 0 #220, -1px 1px 0 #220, 1px 1px 0 #220;
+      background-image: url("../img/green-button.png");
+      background-repeat: no-repeat;
+      text-decoration: none;
+      padding-top: 6px;
+      text-align: center;
+      font-size: 14px;
+      color: #ffdf00;
+    }
+  }
+}
+.main__calculator__description__link:hover {
+  text-decoration: underline;
+}
+.main__calculator__submit-button:hover {
+  transition: 0.2s;
+  cursor: pointer;
+  background-image: url("../img/normal-button-hover.png");
+}
+.main__calculators__button:hover {
+  transition: 0.2s;
+  cursor: pointer;
+  background-image: url("../img/large-button-hover.gif");
+}
+.main__links__github:hover {
+  transition: 0.2s;
+  cursor: pointer;
+  background-image: url("../img/green-button-hover.png");
+}
+// Remove arrow from input type number
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+//

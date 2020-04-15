@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Useful calculators for Tibia players.">
+  <meta name="keywords" content="Tibia, calculator, calculators, experience, exp, party, ranking, level, skill, speed, kevinnicolasbq">
+  <meta name="author" content="Kevin Quintino (kevinnicolasbq)">
+  <title>Tibia Calculators</title>
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+  
+  <link type="text/css" rel="stylesheet" href="css/main.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="logo">
+    <img src="../img/tibia-calculators-logo.png" alt="Tibia Calculators logo">
+  </div>
+  <div class="main">
+    <h1 class="main__title">Select a calculator</h1>
+    <div class="main__calculators">
+      <input class="main__calculators__button" type="button" value="Experience" onclick="changeToExperienceCalculator()">
+      <input class="main__calculators__button" type="button" value="Party EXP" onclick="changeToPartyCalculator()">
+      <input class="main__calculators__button" type="button" value="Character speed" onclick="changeToSpeedCalculator()">
+      <input class="main__calculators__button" type="button" value="Character stats"
+      onclick="changeToStatsCalculator()">
+    </div>
+
+    <hr/>
+
+    <div id="introduction" class="main__calculator">
+      <h1 class="main__calculator__title">Welcome to Tibia Calculators</h1>
+      <p class="main__calculator__description">
+        Here you, tibian, can enjoy our useful calculators to calculate things such the experience needed to achieve some level, party minimum and maximum level to share experience and so on..
+      </p>
+    </div>
+
+    <div id="experience-calculator" class="main__calculator">
+      <h1 class="main__calculator__title">Calculator under maintenance</h1>
+      <p class="main__calculator__description">
+        We're working to launch it as soon as possible!
+      </p>
+    </div>
+
+    <div id="party-calculator" class="main__calculator">
+      <h1 class="main__calculator__title">Party experience calculator</h1>
+      <p class="main__calculator__description">
+        Calculate the <strong>minimum</strong> and the <strong>maximum</strong> character level that can share experience with you. You can find more information on <a href="https://www.tibiawiki.com.br/wiki/Party" target="_blank" class="main__calculator__description__link">Tibia Wiki</a>.
+      </p>
+      <input type="number" id="characterLevel" class="main__calculator__input"
+        placeholder="Insert your character level">
+      <input type="submit" value="Calculate" class="main__calculator__submit-button"
+        onclick="calculatePartyExperience(document.getElementById('characterLevel').value)">
+      <p id="calculator-result" class="main__calculator__result">&nbsp</p>
+    </div>
+
+    <div id="speed-calculator" class="main__calculator">
+      <h1 class="main__calculator__title">Calculator under maintenance</h1>
+      <p class="main__calculator__description">
+        We're working to launch it as soon as possible!
+      </p>
+    </div>
+
+    <div id="stats-calculator" class="main__calculator">
+      <h1 class="main__calculator__title">Calculator under maintenance</h1>
+      <p class="main__calculator__description">
+        We're working to launch it as soon as possible!
+      </p>
+    </div>
+
+    <hr/>
+
+    <div class="main__links">
+      <a target="_blank" class="main__links__github" href="https://github.com/kevinnicolasbq/tibia-calculators">Project GitHub</a>
+    </div>
+
+  </div>
+
+  <script src="js/change-calculator.js" async></script>
+  <script src="js/party-calculator.js" defer></script>
+
+</body>
+
+</html>
