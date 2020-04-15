@@ -4,6 +4,6 @@ function calculatePartyExperience(characterLevel) {
     } else {
         let minimumLevel = Math.round(characterLevel / 3 * 2); //Calculates the minimum level with the formula
         let maximumLevel = Math.round(characterLevel / 2 * 3); //Calculates the maximum level with the formula
-        console.log("Minimum level: " + minimumLevel + " | Maximum level: " + maximumLevel); //Outputs the results
+        console.log("Minimum level: " + minimumLevel + " | Maximum level: " + maximumLevel); //Show the outputs
     }
 }
